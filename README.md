@@ -64,6 +64,20 @@ The purpose of this repository is to make it easier for users to **find explanat
 </td>
 
 </tr>
+
+<tr>
+
+<td align="center">
+<a href="https://drive.google.com/file/d/1K1ZaQscX2zFOU0_jNXUputvL4-s4qvPl/view?usp=sharing">
+<img src="Topics-Covered/7-How-to-set-graphics-preferences/7.png" width="250">
+</a>
+<br><b>How to Set Graphic Preferences</b>
+</td>
+
+<td></td>
+<td></td>
+
+</tr>
 </table>
 
 ---
