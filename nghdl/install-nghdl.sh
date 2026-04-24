@@ -46,27 +46,9 @@ error_exit()
 
 function installVerilator
 {
-    echo "Installing $verilator......................."
-    tar -xvf $verilator.tar.xz
-    echo "$verilator successfully extracted"
-    echo "Changing directory to $verilator installation"
-    cd $verilator
-    echo "Configuring $verilator build as per requirements"
-    chmod +x configure
-    ./configure
-    make -j$(sysctl -n hw.ncpu) # macOS cpu cores
-    sudo make install
-    echo "Removing the unessential verilator files........"
-    rm -r docs
-    rm -r examples
-    rm -r include
-    rm -r test_regress
-    rm -r bin
-    ls -1 | grep -E -v 'config.status|configure.ac|Makefile.in|verilator.1|configure|Makefile|src|verilator.pc' | xargs rm -f
-    #sudo rm -v -r'!("config.status"|"configure.ac"|"Makefile.in"|"verilator.1"|"configure"|"Makefile"|"src"|"verilator.pc")'
-
+    echo "Installing verilator via apt (Ubuntu 25.x native package)..."
+    sudo apt-get install -y verilator build-essential
     echo "Verilator installed successfully"
-    cd ../
 }
 
 # ==============================
